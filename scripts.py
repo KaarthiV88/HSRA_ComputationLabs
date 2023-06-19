@@ -222,3 +222,26 @@ print(matrix[1])
 print(matrix[0][0])
 print("")
 
+#Lab 1C: 
+print("Lab1 Part1C: ")
+
+two_n_1 = np.zeros((10), dtype= int)
+for i in range(0, len(two_n_1)):
+    two_n_1[i] = 2**i
+print(two_n_1)
+
+two_n_2 = np.empty(0, int)
+for i in range(0, 10):
+    two_n_2 = np.append(two_n_2, 2**i)
+print(two_n_2)
+
+three_n = []
+for i in range(0, 9):
+    three_n.append(3**i)
+    
+print(three_n)
+for i in range(0, len(three_n)):
+    three_n[i] = 3**i - 2**i
+    
+print(three_n)
+
