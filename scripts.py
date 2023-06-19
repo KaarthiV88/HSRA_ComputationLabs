@@ -51,3 +51,45 @@ print(my_age % 2)
 KE = 0.5*5*2**2
 PE = 5*9.8*5
 print("Total Energy = ", (KE + PE))
+
+#2D: 
+print("2D: ")
+my_age = float(my_age)
+print(my_age)
+print("You can tell the difference between and Integer and a Float by using the 'type()' function, or by printing it and seeing if there are decimals at the end of it.")
+print(math.sqrt(36))
+print((math.exp(3) + math.exp(-2)))
+total_energy = 0
+PE = 0.5
+KE = 0.5*10*(math.pow(5, 2))
+total_energy = PE + KE
+print(total_energy)
+print("")
+
+#2E: 
+print("2E: ")
+
+def print_hello():
+    return "Hello!"
+
+print(print_hello())
+
+def print_age(age):
+    return "I am " + str(age) + " years old"
+
+print(print_age(my_age))
+
+def compute_kinetic_energy(mass, velocity):
+    kinetic_energy = 0.5*mass*(math.pow(velocity, 2))
+    return kinetic_energy
+
+print(compute_kinetic_energy(10, 10))
+
+def energy(mass, velocity, height):
+    kinetic_energy = 0.5*mass*(math.pow(velocity, 2))
+    potential_energy = mass*9.8*height
+    total_energy = kinetic_energy + potential_energy
+    return str(kinetic_energy) + ", " + str(potential_energy) + ", " + str(total_energy)
+
+print(energy(5, 3, 10))
+print("")
