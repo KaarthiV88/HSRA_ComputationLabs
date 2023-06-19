@@ -93,3 +93,60 @@ def energy(mass, velocity, height):
 
 print(energy(5, 3, 10))
 print("")
+#2F;
+print("2F: ")
+
+if(my_age == 25):
+    print(True)
+else:
+    print(False)
+
+num1 = compute_kinetic_energy(5, 10)
+num2 = compute_kinetic_energy(3, 11)
+if(num1 <= num2):
+    print(True)
+else:
+    print(False)
+
+def greater_than_5(x):
+    if(x > 5 and x%2 == 0):
+        return True
+    else:
+        return False
+
+print(greater_than_5(6))
+print("")
+
+#2G: 
+print("2G: ")
+
+def even_or_odd(num):
+    if(num%2 == 0):
+        return str(num) + " is EVEN"
+    else:
+        return str(num) + " is ODD"
+
+print(even_or_odd(10))
+print(even_or_odd(11))
+
+def is_sideC_5(a, b):
+    c = math.sqrt(((a**2)+(b**2)))
+    if(c == 5):
+        return "Side C is equal to 5"
+    elif(c > 5):
+        return "Side C is greater than 5"
+    else:
+        return "Side C is less than 5"
+
+print(is_sideC_5(3, 4))
+print(is_sideC_5(1, 2))
+
+def morse_potential_energy(De, Re, R):
+    a = 5
+    morse = (1-2.71828**(-a*(R-Re)))**2*De
+    return morse
+
+print(morse_potential_energy(10, 4, 5))
+print("")
+#_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
