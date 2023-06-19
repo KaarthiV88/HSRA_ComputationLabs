@@ -150,3 +150,55 @@ print(morse_potential_energy(10, 4, 5))
 print("")
 #_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+#Lab 1:
+
+#1A:
+print("Lab1 Part1A: ")
+
+def count_to_n(n):
+    if(n == 3):
+        return (str(1) + "\n" + str(2) + "\n" + str(3))
+
+    elif(n == 2):
+        return(str(1) + "\n" + str(2))
+
+    else:
+        return(str(1))
+
+print(count_to_n(1))
+print(count_to_n(2))
+print(count_to_n(3))
+print("")
+
+def count_to_n_for(n):
+    stringer = ""
+    for i in range(1, n+1):
+        stringer += (str(i) + "\n")
+
+    return stringer
+
+def count_to_n_while(n):
+    i = 1
+    stringer = ""
+    while(i <= n):
+        stringer += (str(i) + "\n")
+        i += 1
+
+    return stringer
+
+print(count_to_n_for(2))
+print(count_to_n_for(10))
+
+print(count_to_n_while(2))
+print(count_to_n_while(10))
+
+def sumDivi():
+    count = 0
+    for i in range(0, 200):
+        if(i%2 == 0 and i%7 == 0):
+            count += i
+
+    return count
+
+print(sumDivi())
+print("")
