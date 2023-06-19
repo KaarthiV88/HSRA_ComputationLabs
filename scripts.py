@@ -202,3 +202,23 @@ def sumDivi():
 
 print(sumDivi())
 print("")
+
+#Lab 1B:
+print("Lab1 Part1B: ")
+intlist3 = [0,1, 2, 3]
+intlist9 = []
+for i in range (0,10):
+    intlist9.append(i)
+
+two_n = []
+for i in range (0,10):
+    two_n.append(2**i)
+
+print(two_n)
+print(two_n[7])
+
+matrix = [[3,4], [5,6]]
+print(matrix[1])
+print(matrix[0][0])
+print("")
+
