@@ -72,3 +72,48 @@ matrix = [[3,4], [5,6]]
 print(matrix[1])
 print(matrix[0][0])
 print("")
+
+#Lab 1Ac: 
+print("Lab1 Part1C: ")
+
+two_n_1 = np.zeros((10), dtype= int)
+for i in range(0, len(two_n_1)):
+    two_n_1[i] = 2**i
+print(two_n_1)
+
+two_n_2 = np.empty(0, int)
+for i in range(0, 10):
+    two_n_2 = np.append(two_n_2, 2**i)
+print(two_n_2)
+
+three_n = []
+for i in range(0, 9):
+    three_n.append(3**i)
+    
+print(three_n)
+for i in range(0, len(three_n)):
+    three_n[i] = 3**i - 2**i
+    
+print(three_n)
+
+array_1 = np.array([1,2])
+array_2 = np.array([3, 4])
+
+list_1 = [1,2]
+list_2 = [3,4]
+
+print(np.sum(array_1) + np.sum(array_2))
+print(np.sum(list_1) + np.sum(list_2))
+
+vector = [5.3, 6.2, 9.5]
+print(np.linalg.norm(vector))
+
+def vectorFinder(arr):
+    x = np.linalg.norm(arr)
+    y = 0
+    for i in range(0, len(arr)):
+        y += (arr[i]/x)
+    
+    return "Normal Vector: " + str(x) + "\nUnit Vector: " + str(y)
+
+print(vectorFinder([12, -3, -4]))
