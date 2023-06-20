@@ -6,8 +6,8 @@
 
 
 #----------------
-#import numpy, but do it with np
-import numpy as np
+#import numpy
+import numpy
 
 # This function is meant to count the number of 7's in an array  
 def countSevens(data):
@@ -36,7 +36,7 @@ def totalSum(data):
         sum += data[i]
     return sum
 
-cards = np.array([1, 3, 7, 11, 7, 2])
+cards = numpy.array([1, 3, 7, 11, 7, 2])
 print('Number of 7s:',countSevens(cards))
-print( 'Sum of values in array:'  + totalSum(cards) ) #Adding a '+' to properly concatenate the string
+print( 'Sum of values in array:'  + str(totalSum(cards))) #Adding a '+' to properly concatenate the string
 print( 'Percent 7s',percentSevens(cards) )
