@@ -16,23 +16,23 @@ import numpy
 def print_n_fibonacci(n):
     a = 1.
     b = 1.
-    print(a 
+    print(a) #closing the print statement with ')'
     print(b)
     counter = 2
     for i in range(n):
         newa = b
         b = a+b
-        a = newb
+        newb = a #flip the value setter
         print(b)
-            counter +=1
-    print 'This function requested ', n, 'numbers and printed ',counter,'numbers'
+        counter +=1 #correct the indentation
+    print('This function requested ', n, 'numbers and printed ',counter,'numbers')
 
-print 'output for print_n_fibonacc where n =',10,':'
+print('output for print_n_fibonacc where n =',10,':')
 print_n_fibonacci(10)
 print
 
 # This function prints the fibonacci sequence up to the number 610 
-def print_fibonacci_upto610()
+def print_fibonacci_upto610(): #create function with ':'
     a,b = 1.,1.
     print(a)
     print(b)
@@ -61,11 +61,11 @@ print()
 # This function creates a numpy array which contais the fibonacci sequence 
 # up to the number 610
 def create_fibonacci_array_upto610():
-    counter = 1
-    fibonacci = numpy.array([1.,1.]
-    while fibonacci[counter+1] =< 610.: 
+    counter = 0
+    fibonacci = numpy.array([1.,1.])
+    while (fibonacci[counter] <= 610.): 
         counter += 1
-        fibonacci = numpy.append(fibonacci, fibonacci[counter] + fibonacci[counter+1])
+        fibonacci = numpy.append(fibonacci, fibonacci[counter] + fibonacci[counter])
     return fibonacci 
 
 print('array return from create_fibonacci_array_upto610:')
