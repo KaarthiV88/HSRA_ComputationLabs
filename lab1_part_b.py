@@ -22,3 +22,17 @@ def moveCalc(velocity, acceleration):
     return "Movement: " + str(delta_r) + "m\n" + "New Velocity: " + str(new_velocity) + "m\s"
 
 print(moveCalc(10, 3))
+
+def damper(posChange, velocity):
+    threshold = 0.1
+    if(posChange > threshold):
+        posChange = threshold
+        velocity = 0    
+    else:
+        velocity = 0.9*velocity
+        
+def updater(currentPos, posChange):
+    newPosition = currentPos + posChange
+    return newPosition
+
+print(updater(10, 5))
