@@ -1,6 +1,8 @@
 import math
 import numpy as np
 
+#Damped Molecular Dynamics
+
 def forceReturn(pos):
     Vlj = 4*1*(-12*(1/pos)**13 + 6 * (1/pos)**7)
     return Vlj
